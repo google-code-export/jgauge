@@ -225,23 +225,11 @@ Please note: *.gaugeId* must be set and unique for each jGauge instance!
 
 This table lists the functions to use jGauge.  The most important function is *.initialise()* which must be called on each new jGauge.  Once this is done *.setValue()* can be used to change gauge value (this updates the value label and animates the needle).
 
-<table cellspacing="0">
-	<tr>
-		<th>Function</th>
-		<th>Description</th>
-		<th>Example usage</th>
-	</tr>
-	<tr>
-		<td><strong>.initialise()</strong></td>
-		<td>Initialises the gauge and puts it on the page.</td>
-		<td class="code">myGauge<strong>.initialise()</strong>;</td>
-	</tr>
-	<tr>
-		<td><strong>.setValue()</strong></td>
-		<td>Sets or updates the gauge value.</td>
-		<td class="code">myGauge<strong>.setValue(</strong>5.2<strong>)</strong>;</td>
-	</tr>
-	<tr>
+|| *Function* || *Description* || *Example usage* ||
+|| *.initialise()* || Initialises the gauge and puts it on the page. || {{{myGauge*.initialise()*;}}} ||
+|| *.setValue()* || Sets or updates the gauge value. || {{{myGauge*.setValue(*5.2*)*;}}} ||
+
+{{{
 		<td><strong>.getValue()</strong></td>
 		<td>Gets the current gauge value.</td>
 		<td class="code">var myValue = myGauge<strong>.getValue()</strong>;</td>
@@ -267,3 +255,4 @@ This table lists the functions to use jGauge.  The most important function is *.
 		</td>
 	</tr>
 </table>
+}}}
