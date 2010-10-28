@@ -54,173 +54,39 @@ This table lists all the available parameters to customise jGauge.  When a new j
 
 Please note: *.gaugeId* must be set and unique for each jGauge instance!
 
-<table cellspacing="0">
-	<tr>
-		<th>Parameter</th>
-		<th>Default value</th>
-		<th>Description</th>
-	</tr>
-	<tr>
-		<td><strong>.gaugeId</strong></td>
-		<td>'' <em>(nothing)</em></td>
-		<td>
-			The 'id' attribute of the placeholder DIV.<br />
-			Must be set and unique for each jGauge instance.
-		</td>
-	</tr>
-	<tr>
-		<td><strong>.gaugeLimitAction</strong></td>
-		<td>limitAction.autoRange</td>
-		<td>What to do when the needle hits the limit.</td>
-	</tr>
-	<tr>
-		<td><strong>.gaugeSegmentStart</strong></td>
-		<td>-20</td>
-		<td>Relative to 0&deg; (pointing right / 3-o-clock).</td>
-	</tr>
-	<tr>
-		<td><strong>.gaugeSegmentEnd</strong></td>
-		<td>20</td>
-		<td>Relative to 0&deg; (pointing right / 3-o-clock).</td>
-	</tr>
-	<tr>
-		<td><strong>.gaugeImagePath</strong></td>
-		<td>'img/jgauge_face_default.png'</td>
-		<td>Background image path.</td>
-	</tr>
-	<tr>
-		<td><strong>.gaugeWidth</strong></td>
-		<td>160</td>
-		<td>Total width of jGauge.</td>
-	</tr>
-	<tr>
-		<td><strong>.gaugeHeight</strong></td>
-		<td>114</td>
-		<td>Total height of jGauge.</td>
-	</tr>
-	<tr>
-		<td><strong>.needleImagePath</strong></td>
-		<td>'img/jgauge_needle_default.png'</td>
-		<td>Needle image path.</td>
-	</tr>
-	<tr>
-		<td><strong>.needleXOffset</strong></td>
-		<td>0</td>
-		<td>Shift needle position horizontally from center.</td>
-	</tr>
-	<tr>
-		<td><strong>.needleYOffset</strong></td>
-		<td>24</td>
-		<td>Shift needle position vertically from center.</td>
-	</tr>
-	<tr>
-		<td><strong>.labelXOffset</strong></td>
-		<td>0</td>
-		<td>Shift value label position horizontally from center.</td>
-	</tr>
-	<tr>
-		<td><strong>.labelYOffset</strong></td>
-		<td>20</td>
-		<td>Shift value label position vertically from center.</td>
-	</tr>
-	<tr>
-		<td><strong>.labelPrefix</strong></td>
-		<td>'' <em>(nothing)</em></td>
-		<td>Prefix for the value label (i.e. '$').</td>
-	</tr>
-	<tr>
-		<td><strong>.labelSuffix</strong></td>
-		<td>'' <em>(nothing)</em></td>
-		<td>Suffic for the value label (i.e. ' kW')</td>
-	</tr>
-	<tr>
-		<td><strong>.labelPrecision</strong></td>
-		<td>1</td>
-		<td>Value label rounding decimal places.</td>
-	</tr>
-	<tr>
-		<td><strong>.tickCount</strong></td>
-		<td>11</td>
-		<td>Number of tick marks around the gauge face.</td>
-	</tr>
-	<tr>
-		<td><strong>.tickStart</strong></td>
-		<td>0</td>
-		<td>Value of the first tick mark.</td>
-	</tr>
-	<tr>
-		<td><strong>.tickEnd</strong></td>
-		<td>10</td>
-		<td>Value of the last tick mark.</td>
-	</tr>
-	<tr>
-		<td><strong>.tickColour</strong></td>
-		<td>'rgba(255, 255, 255, 1)'</td>
-		<td>Tick mark colour and alpha (opacity).</td>
-	</tr>
-	<tr>
-		<td><strong>.tickThickness</strong></td>
-		<td>3</td>
-		<td>Tick mark thickness.</td>
-	</tr>
-	<tr>
-		<td><strong>.tickRadius</strong></td>
-		<td>76</td>
-		<td>Tick mark radius (distance from gauge center point).</td>
-	</tr>
-	<tr>
-		<td><strong>.tickSubDivisions</strong></td>
-		<td>5</td>
-		<td><em>Future use</em></td>
-	</tr>
-	<tr>
-		<td><strong>.tickSubColour</strong></td>
-		<td>'rgba(255, 255, 255, 0.5)'</td>
-		<td><em>Future use</em></td>
-	</tr>
-	<tr>
-		<td><strong>.tickSubThickness</strong></td>
-		<td>1</td>
-		<td><em>Future use</em></td>
-	</tr>
-	<tr>
-		<td><strong>.tickLabelPrecision</strong></td>
-		<td>1</td>
-		<td>Rounding decimal places for tick labels.</td>
-	</tr>
-	<tr>
-		<td><strong>.tickLabelRadius</strong></td>
-		<td>65</td>
-		<td>Tick label radius (distance fro gauge center point).</td>
-	</tr>
-	<tr>
-		<td><strong>.rangeRadius</strong></td>
-		<td>55</td>
-		<td>Range arc radius (distance from gauge center point).</td>
-	</tr>
-	<tr>
-		<td><strong>.rangeThickness</strong></td>
-		<td>36</td>
-		<td>Range arc thickness (spread of the arc outwards).</td>
-	</tr>
-	<tr>
-		<td><strong>.rangeStart</strong></td>
-		<td>-24</td>
-		<td>Range start point as an angle relative to 0deg (pointing right).</td>
-	</tr>
-	<tr>
-		<td><strong>.rangeEnd</strong></td>
-		<td>25</td>
-		<td>Range end point as an angle relative to 0deg (pointing right).</td>
-	</tr>
-	<tr>
-		<td><strong>.rangeColour</strong></td>
-		<td>'rgba(255, 32, 0, 0.2)'</td>
-		<td>Colour and alpha (opacity) of the range arc.</td>
-	</tr>
-</table>
-	
-			
+|| *Parameter* || *Default value* || *Description* ||
+|| *.gaugeId* || '' _(nothing)_ || The 'id' attribute of the placeholder DIV.<br>Must be set and unique for each jGauge instance. ||
+|| *.gaugeLimitAction* || limitAction.autoRange || What to do when the needle hits the limit. ||
+|| *.gaugeSegmentStart* || -20 || Relative to 0&deg; (pointing right / 3-o-clock). ||
+|| *.gaugeSegmentEnd* || 20 || Relative to 0&deg; (pointing right / 3-o-clock). ||
+|| *.gaugeImagePath* || 'img/jgauge_face_default.png' || Background image path. ||
+|| *.gaugeWidth* || 160 || Total width of jGauge. ||
+|| *.gaugeHeight* || 114 || Total height of jGauge. ||
+|| *.needleImagePath* || 'img/jgauge_needle_default.png' || Needle image path. ||
+|| *.needleXOffset* || 0 || Shift needle position horizontally from center. ||
+|| *.needleYOffset* || 24 || Shift needle position vertically from center. ||
+|| *.labelXOffset* || 0 || Shift value label position horizontally from center. ||
+|| *.labelYOffset* || 20 || Shift value label position vertically from center. ||
+|| *.labelPrefix* || '' _(nothing)_ || Prefix for the value label (i.e. '$'). ||
+|| *.labelSuffix* || '' _(nothing)_ || Suffic for the value label (i.e. ' kW') ||
+|| *.labelPrecision* || 1 || Value label rounding decimal places. ||
+|| *.tickCount* || 11 || Number of tick marks around the gauge face. ||
+|| *.tickStart* || 0 || Value of the first tick mark. ||
+|| *.tickEnd* || 10 || Value of the last tick mark. ||
+|| *.tickColour* || 'rgba(255, 255, 255, 1)' || Tick mark colour and alpha (opacity). ||
+|| *.tickThickness* || 3 || Tick mark thickness. ||
+|| *.tickRadius* || 76 || Tick mark radius (distance from gauge center point). ||
+|| *.tickSubDivisions* || 5 || _Future use_ ||
+|| *.tickSubColour* || 'rgba(255, 255, 255, 0.5)' || _Future use_ ||
+|| *.tickSubThickness* || 1 || _Future use_ ||
+|| *.tickLabelPrecision* || 1 || Rounding decimal places for tick labels. ||
+|| *.tickLabelRadius* || 65 || Tick label radius (distance from gauge center point). ||
+|| *.rangeRadius* || 55 || Range arc radius (distance from gauge center point). ||
+|| *.rangeThickness* || 36 || Range arc thickness (spread of the arc outwards). ||
+|| *.rangeStart* || -24 || Range start point as an angle relative to 0deg (pointing right). ||
+|| *.rangeEnd* || 25 || Range end point as an angle relative to 0deg (pointing right). ||
+|| *.rangeColour* || 'rgba(255, 32, 0, 0.2)' || Colour and alpha (opacity) of the range arc. ||
+
 == Functions ==
 
 This table lists the functions to use jGauge.  The most important function is *.initialise()* which must be called on each new jGauge.  Once this is done *.setValue()* can be used to change gauge value (this updates the value label and animates the needle).
@@ -228,6 +94,6 @@ This table lists the functions to use jGauge.  The most important function is *.
 || *Function* || *Description* || *Example usage* ||
 || *.initialise()* || Initialises the gauge and puts it on the page. || {{{myGauge*.initialise()*;}}} ||
 || *.setValue()* || Sets or updates the gauge value. || {{{myGauge*.setValue(*5.2*)*;}}} ||
-|| *.getValue()* || Gets the current gauge value. || {{{var myValue = myGauge*.getValue()*; ||
-|| *.updateTicks()* || Updates the tick marks and tick labels (call after changing tick parameters). || {{{// Make a change to the ticks.}}}<br>{{{myGauge.tickCount = 6;}}}<br>{{{// Now we must update ticks.<br>myGauge*.updateTicks()*;}}} ||
-|| *.updateRange()* || Updates the range (call after changing range parameters). || {{{// Make a change to the range.}}}<br>{{{myGauge.rangeStart = -20;}}}<br>{{{// Now we must update range.<br>myGauge*.updateRange()*>;}}} ||
+|| *.getValue()* || Gets the current gauge value. || {{{var myValue = myGauge*.getValue()*;}}} ||
+|| *.updateTicks()* || Updates the tick marks and tick labels (call after changing tick parameters). || {{{// Make a change to the ticks.}}}<br>{{{myGauge.tickCount = 6;}}}<br>{{{// Now we must update ticks.}}}<br>{{{myGauge*.updateTicks()*;}}} ||
+|| *.updateRange()* || Updates the range (call after changing range parameters). || {{{// Make a change to the range.}}}<br>{{{myGauge.rangeStart = -20;}}}<br>{{{// Now we must update range.}}}<br>{{{myGauge*.updateRange()*>;}}} ||
