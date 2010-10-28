@@ -229,11 +229,5 @@ This table lists the functions to use jGauge.  The most important function is *.
 || *.initialise()* || Initialises the gauge and puts it on the page. || {{{myGauge*.initialise()*;}}} ||
 || *.setValue()* || Sets or updates the gauge value. || {{{myGauge*.setValue(*5.2*)*;}}} ||
 || *.getValue()* || Gets the current gauge value. || {{{var myValue = myGauge*.getValue()*; ||
-|| *.updateTicks()* || Updates the tick marks and tick labels (call after changing tick parameters). || {{{// Make a change to the ticks.
-myGauge.tickCount = 6;
-// Now we must update ticks.
-myGauge*.updateTicks()*;}}} ||
-|| *.updateRange()* || Updates the range (call after changing range parameters). || {{{// Make a change to the range.
-myGauge.rangeStart = -20;
-// Now we must update range.
-myGauge*.updateRange()*>;}}} ||
+|| *.updateTicks()* || Updates the tick marks and tick labels (call after changing tick parameters). || {{{// Make a change to the ticks.<br>myGauge.tickCount = 6;<br>// Now we must update ticks.<br>myGauge*.updateTicks()*;}}} ||
+|| *.updateRange()* || Updates the range (call after changing range parameters). || {{{// Make a change to the range.<br>myGauge.rangeStart = -20;<br>// Now we must update range.<br>myGauge*.updateRange()*>;}}} ||
