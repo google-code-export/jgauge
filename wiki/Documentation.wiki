@@ -232,8 +232,8 @@ This table lists the functions to use jGauge.  The most important function is *.
 || *.updateTicks()* || Updates the tick marks and tick labels (call after changing tick parameters). || {{{// Make a change to the ticks.
 myGauge.tickCount = 6;
 // Now we must update ticks.
-myGauge*.updateTicks()*; ||
+myGauge*.updateTicks()*;}}} ||
 || *.updateRange()* || Updates the range (call after changing range parameters). || {{{// Make a change to the range.
 myGauge.rangeStart = -20;
 // Now we must update range.
-myGauge*.updateRange()*>; ||
+myGauge*.updateRange()*>;}}} ||
