@@ -11,7 +11,7 @@ Please note this is an alpha release. Version 0.3.0 is still under development u
 
 Include these files in the head of your HTML:
 {{{
-<link rel="stylesheet" href="css/gauge_screen.css" type="text/css" /><br />
+<link rel="stylesheet" href="css/gauge_screen.css" type="text/css" />
 <!--[if IE]><script type="text/javascript" language="javascript" src="js/excanvas.min.js"></script><![endif]-->
 <script language="javascript" type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
 <script language="javascript" type="text/javascript" src="js/jQueryRotate.min.js"></script>
