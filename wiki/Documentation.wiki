@@ -3,7 +3,9 @@
 
 = jGauge 0.3.0 Alpha 2 - Documentation =
 
-Please note this is an alpha release. Version 0.3.0 is still under development use with caution! ;-)  If you find jGauge useful a link back to my blog is appreciated.
+Please note this is an alpha release. Version 0.3.0 is still under development use with caution! ;-)
+
+If you find jGauge useful a link back to my blog at <a href="http://www.dariancabot.com">www.dariancabot.com</a> is appreciated.
 
 <a href="http://www.dariancabot.com/projects-2/jgauge/">See the main project page</a> for more information and downloads.
 
