@@ -32,7 +32,7 @@ Then use the jQuery ready() function to initialise the jGauge:
 
 {{{
 <script type="text/javascript">
-	var demoGauge = new jGauge(); // Create a new jGauge.
+	var myGauge = new jGauge(); // Create a new jGauge.
 	myGauge.gaugeId = 'jGaugeDemo'; // Link the new jGauge to the placeholder DIV.
 
 	// This function is called by jQuery once the page has finished loading.
