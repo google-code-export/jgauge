@@ -5,7 +5,7 @@
 
 Please note this is an alpha release. Version 0.3.0 is still under development use with caution! ;-)
 
-If you find jGauge useful a link back to the home page <a href="http://www.jgauge.com">www.jgauge.com</a> or my blog <a href="httep://www.dariancabot.com">www.dariancabot.com</a> is appreciated.
+If you find jGauge useful a link back to the home page <a href="http://www.jgauge.com">www.jgauge.com</a> or my blog <a href="http://www.dariancabot.com">www.dariancabot.com</a> is appreciated.
 
 <a href="http://www.jgauge.com/">See the main project page</a> for more information and downloads.
 
