@@ -1,5 +1,5 @@
 #summary jGauge documentation with developer reference and usage examples.
-#labels Featured,Phase-Implementation,Phase-Deploy
+#labels Deprecated,Phase-Implementation,Phase-Deploy
 
 = jGauge 0.3.0 Alpha 2 - Documentation =
 
