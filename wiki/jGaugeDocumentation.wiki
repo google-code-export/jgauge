@@ -55,44 +55,41 @@ This table lists all the available parameters to customise jGauge.  When a new j
 Please note: *.gaugeId* must be set and unique for each jGauge instance!
 
 || *Parameter* || *Default value* || *Description* ||
-|| *.gaugeId* || '' _(nothing)_ || The 'id' attribute of the placeholder DIV.<br>Must be set and unique for each jGauge instance. ||
-|| *.gaugeLimitAction* || limitAction.autoRange || What to do when the needle hits the limit. ||
-|| *.gaugeSegmentStart* || -20 || Relative to 0&deg; (pointing right / 3-o-clock). ||
-|| *.gaugeSegmentEnd* || 20 || Relative to 0&deg; (pointing right / 3-o-clock). ||
-|| *.gaugeImagePath* || 'img/jgauge_face_default.png' || Background image path. ||
-|| *.gaugeWidth* || 160 || Total width of jGauge. ||
-|| *.gaugeHeight* || 114 || Total height of jGauge. ||
-|| *.needleImagePath* || 'img/jgauge_needle_default.png' || Needle image path. ||
-|| *.needleXOffset* || 0 || Shift needle position horizontally from center. ||
-|| *.needleYOffset* || 24 || Shift needle position vertically from center. ||
-|| *.labelXOffset* || 0 || Shift value label position horizontally from center. ||
-|| *.labelYOffset* || 20 || Shift value label position vertically from center. ||
-|| *.labelPrefix* || '' _(nothing)_ || Prefix for the value label (i.e. '$'). ||
-|| *.labelSuffix* || '' _(nothing)_ || Suffic for the value label (i.e. ' kW') ||
-|| *.labelPrecision* || 1 || Value label rounding decimal places. ||
-|| *.tickCount* || 11 || Number of tick marks around the gauge face. ||
-|| *.tickStart* || 0 || Value of the first tick mark. ||
-|| *.tickEnd* || 10 || Value of the last tick mark. ||
-|| *.tickColour* || 'rgba(255, 255, 255, 1)' || Tick mark colour and alpha (opacity). ||
-|| *.tickThickness* || 3 || Tick mark thickness. ||
-|| *.tickRadius* || 76 || Tick mark radius (distance from gauge center point). ||
-|| *.tickSubDivisions* || 5 || _Future use_ ||
-|| *.tickSubColour* || 'rgba(255, 255, 255, 0.5)' || _Future use_ ||
-|| *.tickSubThickness* || 1 || _Future use_ ||
-|| *.tickLabelPrecision* || 1 || Rounding decimal places for tick labels. ||
-|| *.tickLabelRadius* || 65 || Tick label radius (distance from gauge center point). ||
-|| *.rangeRadius* || 55 || Range arc radius (distance from gauge center point). ||
-|| *.rangeThickness* || 36 || Range arc thickness (spread of the arc outwards). ||
-|| *.rangeStart* || -24 || Range start point as an angle relative to 0deg (pointing right). ||
-|| *.rangeEnd* || 25 || Range end point as an angle relative to 0deg (pointing right). ||
-|| *.rangeColour* || 'rgba(255, 32, 0, 0.2)' || Colour and alpha (opacity) of the range arc. ||
+|| *.id* || '' _(nothing)_ || The 'id' attribute of the placeholder DIV.<br>Must be set and unique for each jGauge instance. ||
+|| *.segmentStart* || -20 || Relative to 0&deg; (pointing right / 3-o-clock). ||
+|| *.segmentEnd* || 20 || Relative to 0&deg; (pointing right / 3-o-clock). ||
+|| *.imagePath* || 'img/jgauge_face_default.png' || Background image path. ||
+|| *.width* || 160 || Total width of jGauge. ||
+|| *.height* || 114 || Total height of jGauge. ||
+|| *.needle.imagePath* || 'img/jgauge_needle_default.png' || Needle image path. ||
+|| *.needle.limitAction* || limitAction.autoRange || What to do when the needle hits the limit. ||
+|| *.needle.xOffset* || 0 || Shift needle position horizontally from center. ||
+|| *.needle.yOffset* || 24 || Shift needle position vertically from center. ||
+|| *.label.xOffset* || 0 || Shift value label position horizontally from center. ||
+|| *.label.yOffset* || 20 || Shift value label position vertically from center. ||
+|| *.label.prefix* || '' _(nothing)_ || Prefix for the value label (i.e. '$'). ||
+|| *.label.suffix* || '' _(nothing)_ || Suffic for the value label (i.e. ' kW') ||
+|| *.label.precision* || 1 || Value label rounding decimal places. ||
+|| *.ticks.count* || 11 || Number of tick marks around the gauge face. ||
+|| *.ticks.start* || 0 || Value of the first tick mark. ||
+|| *.ticks.end* || 10 || Value of the last tick mark. ||
+|| *.ticks.color* || 'rgba(255, 255, 255, 1)' || Tick mark colour and alpha (opacity). ||
+|| *.ticks.thickness* || 3 || Tick mark thickness. ||
+|| *.ticks.radius* || 76 || Tick mark radius (distance from gauge center point). ||
+|| *.ticks.labelPrecision* || 1 || Rounding decimal places for tick labels. ||
+|| *.ticks.labelRadius* || 65 || Tick label radius (distance from gauge center point). ||
+|| *.range.radius* || 55 || Range arc radius (distance from gauge center point). ||
+|| *.range.thickness* || 36 || Range arc thickness (spread of the arc outwards). ||
+|| *.range.start* || -24 || Range start point as an angle relative to 0deg (pointing right). ||
+|| *.range.end* || 25 || Range end point as an angle relative to 0deg (pointing right). ||
+|| *.range.color* || 'rgba(255, 32, 0, 0.2)' || Colour and alpha (opacity) of the range arc. ||
 
 == Functions ==
 
-This table lists the functions to use jGauge.  The most important function is *.initialise()* which must be called on each new jGauge.  Once this is done *.setValue()* can be used to change gauge value (this updates the value label and animates the needle).
+This table lists the functions to use jGauge.  The most important function is *.init()* which must be called on each new jGauge.  Once this is done *.setValue()* can be used to change gauge value (this updates the value label and animates the needle).
 
 || *Function* || *Description* || *Example usage* ||
-|| *.init()* || Initializes the gauge and puts it on the page. || {{{myGauge.initialise();}}} ||
+|| *.init()* || Initializes the gauge and puts it on the page. || {{{myGauge.init();}}} ||
 || *.setValue()* || Sets or updates the gauge value. || {{{myGauge.setValue(5.2);}}} ||
 || *.getValue()* || Gets the current gauge value. || {{{var myValue = myGauge.getValue();}}} ||
 || *.updateTicks()* || Updates the tick marks and tick labels (call after changing tick parameters). || {{{// Make a change to the ticks.}}}<br>{{{myGauge.tickCount = 6;}}}<br>{{{// Now we must update ticks.}}}<br>{{{myGauge.updateTicks();}}} ||
